@@ -2,8 +2,9 @@
  * Created by Jan on 9/16/2015.
  */
 
+(function(angular) {
 'use strict';
-var app = angular.module('myApp', []);
+var app = angular.module('appModule', []);
 
 //angular.module('myApp')
 app.controller('WiwoController', function($scope) {
@@ -51,3 +52,4 @@ app.controller('WiwoController', function($scope) {
         }
     ];
 });
+})(window.angular);

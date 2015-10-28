@@ -2,12 +2,13 @@
  * Created by Jan on 9/19/2015.
  */
 
+(function(angular) {
 'use strict';
 
-var app = angular.module('myApp', ['ui.odometer']);
+var module = angular.module('appModule', ['ui.odometer']);
 
 //angular.module('myApp')
-app.controller('PortfolioController', function($scope, $filter) {
+module.controller('PortfolioController', function($scope, $filter) {
 
     /**
      * Portfolio
@@ -83,3 +84,4 @@ app.controller('PortfolioController', function($scope, $filter) {
     }// This function is untested & wont be used until I gain more project types.
 
 });
+})(window.angular);
