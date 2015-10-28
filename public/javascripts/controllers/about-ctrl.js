@@ -3,8 +3,8 @@
  */
 (function(angular) {
 'use strict';
-var app = angular.module('appModule', []);
+var module = angular.module('appModule', []);
 
 //angular.module('myApp')
-app.controller('AboutController', function($scope) {});
+module.controller('AboutController', function($scope) {});
 })(window.angular);

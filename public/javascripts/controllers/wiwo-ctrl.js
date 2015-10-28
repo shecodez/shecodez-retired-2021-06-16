@@ -4,10 +4,10 @@
 
 (function(angular) {
 'use strict';
-var app = angular.module('appModule', []);
+var module = angular.module('appModule', []);
 
 //angular.module('myApp')
-app.controller('WiwoController', function($scope) {
+module.controller('WiwoController', function($scope) {
 
     /**
      * What I'm Working On.
