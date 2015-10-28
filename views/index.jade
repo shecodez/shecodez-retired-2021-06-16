@@ -1,0 +1,25 @@
+extends layout
+
+block page_headliner
+    .container
+        .row
+            .col-xs-12
+                h4.page-description= t('nav.headline-toolTip.about')
+
+block content
+    section#about
+        .container
+            .row
+                .col-xs-12
+                    h3.section-heading.no-margin
+                        =t('home.greeting')
+                    h2.section-subheading.no-margin
+                        =t('home.aboutLine1')
+                        br
+                        =t('home.aboutLine2')
+
+                    a.btn.btn-lg.btn--transparent.sharp.mt32(href='')=t('home.followBtn.GitHub')
+
+
+block js
+    script(src='/javascripts/controllers/about-ctrl.js')

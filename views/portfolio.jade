@@ -1,0 +1,67 @@
+//
+   Created by Jan on 9/14/2015.
+
+extends layout
+
+block page_headliner
+    .container
+        .row
+            .col-xs-12
+                h4.page-description= t('nav.headline-toolTip.portfolio')
+
+block content
+    section#portfolio(data-ng-controller='PortfolioController')
+        .container
+            .row
+                // Search for projects
+                .col-xs-12
+                    .input-group
+                        input#searchInput.form-control(type='text', placeholder='Search...', data-ng-model='search')
+                        span.input-group-btn
+                            button#searchInputBtn.btn.btn-default.btn-transparent(type='button', ng-click='search = null')
+                                i.fa.fa-search
+
+                // Filter projects
+                // Projects
+                .col-xs-12
+                    h1= t('portfolio.headline.title')
+                        br
+                        small
+                            span(data-odometer='projects.length').text-muted
+                            span= t('portfolio.headline.projects')
+                    span.text-muted {{filtered.length}} &nbsp;
+                        = t('portfolio.headline.results')
+
+                    .year(data-ng-repeat='year in years', ng-show='filtered.length > 0')
+                        h2.page-header {{year}}
+                            = t('portfolio.year')
+                        .project(data-ng-repeat='project in filtered = ( projects | filter: {year: year} | filter: search)')
+                            .links.hidden-print.hidden-xs.pull-right.text-right
+                                // Language
+                                span.language.primary {{project.language}}
+                                // View Concept
+                                a(href='{{project.concept}}', data-ng-if='project.concept', title='View Concept')
+                                    span.glyphicon.glyphicon-eye-open(aria-hidden='true')
+                                // Download
+                                a(href='/downloads/{{project.download}}', data-ng-if='project.download', title='Download', target='_self')
+                                    span.glyphicon.glyphicon-cloud-download(aria-hidden='true')
+                                // View Repository
+                                a(href='{{project.repository}}', data-ng-if='project.repository', title='View Repository')
+                                    span.glyphicon.glyphicon-book(aria-hidden='true')
+
+                            h3 {{project.name}}
+                            span.label.label-info {{project.type}}
+                            h4.text-muted &nbsp;
+                                = t('portfolio.for')
+                                | &nbsp;{{project.for}}
+                            p {{project.description}}
+
+block css
+    link(rel='stylesheet', href='/bower_components/odometer/themes/odometer-theme-minimal.css')
+
+block js
+    // Portfolio Controller
+    script(src='/javascripts/controllers/portfolio-ctrl.js')
+    // Angular Odometer
+    script(src='/bower_components/odometer/odometer.min.js')
+    script(src='/bower_components/angular-odometer-js/dist/angular-odometer.min.js')

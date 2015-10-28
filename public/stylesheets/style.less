@@ -1,0 +1,449 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+/**
+ * DOCUMENT INFORMATION
+ *
+ * Document: NJN Theme
+ * Version:  0.0.1
+ * Author:   Nicole J. Nobles
+ */
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * BASE
+ * Headings.............H1�H6 styles.
+ * Body.................Body styles.
+ *
+ * PAGE STRUCTURE
+ * Section..............Page Sections.
+ * Aside................Page Asides.
+ * Pages................Website Page specific styles.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ *
+ * OBJECTS
+ * Overlay..............Layering over elements.
+ * Shapes...............Shapes for icons and etc.
+ *
+ * COMPONENTS
+ * Nav..................The main page navigation.
+ * Header...............The main page header.
+ * Footer...............The main page footer.
+ * Buttons..............Button elements.
+ * Links................Link elements.
+ *
+ * TYPOGRAPHY
+ * Text.................Text helpers.
+ *
+ * FORMS
+ *
+ * MISC
+ */
+
+// ---------------------------------------------
+//                  #SETTINGS
+// ---------------------------------------------
+
+/* Global
+ ========================*/
+
+html { }
+
+.hidden { display: none !important; }
+
+// Border radius
+.sharp { border-radius: 0 !important; }
+
+// Padding & Margin
+.no-padding { padding: 0 !important; }
+.no-margin { margin: 0 !important; }
+
+.mt16 { margin-top: 16px !important; }
+.mb16 { margin-bottom: 16px !important; }
+.mt32 { margin-top: 32px !important; }
+.mb32 { margin-bottom: 32px !important; }
+
+// Colors
+.primary { color: @primary !important; }
+.transparent { background: transparent !important; }
+
+// ---------------------------------------------
+//                    #BASE
+// ---------------------------------------------
+
+/* Headings
+ ========================*/
+
+/* Body
+ ========================*/
+body {
+  background-color: @bg-color;
+  color: @text-color;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    padding: 64px 0;
+  }
+
+  &:before {
+    margin-bottom: 32px;
+    padding: 0 32px 32px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 64px;
+      padding: 0 64px 64px;
+    }
+  }
+
+  > .bg {
+    position: fixed;
+    background: url('../images/stardust.png') center center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -32px;
+
+    @media (min-width: 768px) {
+      margin-top: -64px;
+    }
+  }
+
+  .grid--loading.bg {
+    background: url('../images/grid.png') left top;
+
+    &.pts {
+      background: url('../images/grid_point.png');
+    }
+  }
+}
+
+/* Main
+ ========================*/
+main {
+  display: flex !important;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+// ---------------------------------------------
+//                    #PAGE
+// ---------------------------------------------
+
+// Highlighting
+::selection {
+  background: @primary;
+  color: @darker;
+}
+
+// Hrs
+hr {
+
+  &.expanded {
+    border-top: 1px solid fade(@light, 10%);
+    margin: 0 0 -1px 0;
+  }
+}
+
+/* Pages
+ ========================*/
+
+// About
+#about {
+  padding: 64px 0;
+
+  .section-heading {
+
+    font-size: 24px;
+
+    @media (min-width: 1200px) {
+      font-size: 36px;
+    }
+    @media (min-width: 992px) {
+      font-size: 30px;
+    }
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  .section-subheading {
+    font-size: 30px;
+
+    @media (min-width: 1200px) {
+      font-size: 48px;
+    }
+    @media (min-width: 992px) {
+      font-size: 48px;
+    }
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+}
+
+
+// WIWO
+#wiwo{
+  padding: 64px 0;
+
+  a.project-tile {
+    border: 1px solid fade(@light, 10%);
+    border-bottom-width: 0;
+    color: @lighter;
+    padding: 32px;
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 264px;
+
+    &:hover {
+      background-color: fade(@darker, 5%);
+    }
+
+    // Border - to get 1px on all sides at all sizes
+    &:last-of-type {
+      border-bottom-width: 1px;
+    }
+
+    @media (min-width: 768px) {
+      border-right-width: 0;
+
+      &:nth-of-type(even) {
+        border-right-width: 1px;
+      }
+      &:nth-last-of-type(2) {
+        border-bottom-width: 1px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      &:nth-of-type(even) {
+        border-right-width: 0;
+      }
+      &:nth-last-of-type(3),
+      &:nth-last-of-type(4), {
+        border-bottom-width: 1px;
+      }
+      &:nth-of-type(4n) {
+        border-right-width: 1px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 281px;
+    }
+
+
+
+    .project-headline{
+      margin-bottom: 36px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .project-details{
+      margin-top: 36px;
+      min-height: 51px;
+
+      .when { font-size: small; }
+      .what { font-weight: 100; }
+    }
+  }
+}
+// Portfolio
+#portfolio{
+  padding: 64px 0;
+
+  .input-group{
+    border: 2px solid @primary;
+
+    input[type=text]:focus, textarea:focus {
+      //background-color: fade(@darker, 10%);
+      color: @text-color;
+      outline: none;
+      box-shadow:none !important;
+    }
+    .form-control, .btn-transparent {
+      display: inline-block !important;
+      background-color: transparent;
+      border-radius: 0;
+      border: none;
+    }
+    i { color: @primary }
+  }
+  .page-header {
+    //margin: 36px 0 18px;
+    border-bottom: 1px solid fade(@light, 10%);
+    padding-bottom: 8px;
+    color: @primary;
+  }
+
+  .project {
+    border-bottom: 1px solid fade(@light, 10%);
+    padding-bottom: 9px;
+    position: relative;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+
+    .links {
+      margin-top: 4.5px;
+    }
+
+    .language {
+      font-weight: 600;
+    }
+
+    a {
+      margin-left: 8px;
+    }
+
+    .label {
+      margin-right: 1px;
+      position: relative;
+      top: -2px;
+      color: #777!important;
+      border: 1px solid #777;
+      border-radius: 0;
+      font-weight: 100!important;
+      background-color: transparent!important;
+    }
+
+    h4 {
+      margin-top: 0;
+      display: inline-block;
+    }
+  }
+}
+// Resume
+
+// ---------------------------------------------
+//                  #OBJECTS
+// ---------------------------------------------
+
+/* Overlay
+ ========================*/
+.overlay { }
+
+
+// ---------------------------------------------
+//                 #COMPONENTS
+// ---------------------------------------------
+
+/* Nav
+ ========================*/
+
+li.nav-link {
+
+  padding: 16px 0 0 0;
+  margin-right: 16px;
+
+  &.active {
+    border-top: 1px solid @primary;
+  }
+}
+
+.tb-language-menu .dropdown {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: -135px;
+
+  visibility: hidden;
+
+  width: 125px;
+  padding: 0;
+
+  list-style: none;
+
+  transition: all .4s;
+  text-align: right;
+
+  opacity: 0;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    padding: 0 6px;
+  }
+
+  @media (max-width: 480px) {
+
+    width: auto;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+
+    li {
+      padding: 2px 0;
+      //display: block;
+    }
+
+    a {
+      padding: 6px 0;
+    }
+  }
+}
+
+.tb-language-menu:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Header
+ ========================*/
+
+/* Footer
+ ========================*/
+.footer {
+  color: fade(@light, 36%);
+}
+
+/* Buttons
+ ========================*/
+.btn--transparent {
+  color: @link-color;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid @primary;
+
+  &:hover {
+    color: @bg-color;
+    background: @primary;
+    transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+  }
+}
+
+/* Links
+ ========================*/
+a {
+  color: fade(@light, 36%);
+  text-decoration: none;
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+
+  &.active {
+    color: @primary;
+  }
+
+  &:hover,
+  &:focus {
+    color: @link-color--hover;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: @link-color;
+  }
+}

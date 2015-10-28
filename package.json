@@ -1,22 +1,22 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "shecodez",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
+  "description": "Personal website portfolio & resume",
   "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
+    "personal",
+    "portfolio",
+    "resume",
+    "website"
   ],
   "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+    "name": "Nicole J. Nobles",
+    "email": "shecodez@gmail.com",
+    "url": "http://www.shecodez.com/"
   },
-  "homepage": "http://www.openshift.com/",
+  "homepage": "http://www.shecodez.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/shecodez/origin-server"
   },
 
   "engines": {
@@ -25,7 +25,16 @@
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "less-middleware": "1.0.x",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "fs": "0.0.2",
+    "i18next": "^1.10.4"
   },
   "devDependencies": {},
   "bundleDependencies": [],

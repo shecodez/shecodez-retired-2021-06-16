@@ -1,0 +1,38 @@
+//
+   Created by Jan on 8/16/2015.
+
+
+.container
+    .row
+        .col-xs-12
+            .logo.mb32
+                a(href='/')
+                    img(src='../images/logo.png', alt='N</>N')
+
+            hr.expanded
+
+            nav.nav
+                ul.list-inline.pull-left.no-margin
+                    li.nav-link
+                        a(href='/', title=t('nav.headline-toolTip.about'))= t('nav.about')
+                    li.nav-link
+                        a(href='/wiwo', title=t('nav.headline-toolTip.wiwo'))= t('nav.wiwo')
+                    li.nav-link
+                        a(href='/portfolio', title=t('nav.headline-toolTip.portfolio'))=t('nav.portfolio')
+                    li.nav-link
+                        a(href='/downloads/resume.pdf', title=t('nav.headline-toolTip.resume'), target='_self' )=t('nav.resume')
+
+                // Language
+                .tb-language-menu.dropdown.pull-right.text-uppercase.mt16
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+
+                    // Dropdown menu with languages
+                    ul.dropdown(role='menu')
+                        li#en
+                            a(href='?setLng=en')= t('nav.lang.en')
+                        li#jp
+                            a(href='?setLng=jp')= t('nav.lang.jp')
+                        li#kr
+                            a(href='?setLng=kr')= t('nav.lang.kr')
+
+            //h4.page-description= t('nav.headline-toolTip.about')

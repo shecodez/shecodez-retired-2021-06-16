@@ -1,0 +1,28 @@
+//
+   Created by Jan on 8/16/2015.
+
+.footer.container
+    .row
+        .contact.col-xs-12.col-sm-6
+            h6=t('footer.contact')
+            ul.list-inline
+                li
+                    a(href='mailto:me@shecodes.com') Email
+                li
+                    a(href='https://www.facebook.com/jan.nicholas.3') Facebook
+                li
+                    a(href='https://www.linkedin.com/pub/nicole-nobles/88/62/7b4') LinkedIn
+                li
+                    a(href='https://twitter.com/she_codez') Twitter
+
+        .hidden-xs.col-sm-6.text-right
+            h6 &copy; #{new Date().getFullYear()}
+                span.primary  SheCodez
+                |  NJN
+            =t('footer.acknowledgement')
+            a(href='http://www.andrewmcwatters.com/')  ACPM
+
+
+
+
+

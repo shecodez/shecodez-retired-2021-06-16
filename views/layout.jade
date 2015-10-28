@@ -1,0 +1,75 @@
+doctype html
+html(lang=i18n.lng())
+    //(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+        title= t('app.title')
+        meta(name='author', content='#{author}')
+        meta(name='description', content='#{description}')
+        meta(name='keywords', content='#{keywords}')
+
+
+        // Bootstrap Core CSS
+        link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+
+        // Fonts
+        link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+        // Googleapis
+        link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Open+Sans')
+
+        // Plugin CSS
+        link(rel='stylesheet', href='/stylesheets/plugins/animate.min.css')
+
+        // Custom CSS
+        link(rel='stylesheet', href='/stylesheets/style.css')
+
+        block css
+
+        block js
+
+    body(ng-app='myApp')
+        //.grid--loading.bg.pts
+        .bg
+        header
+            include partials/nav
+            block page_headliner
+
+        main
+            block content
+
+        footer
+            include partials/footer
+
+        // jQuery
+        script(rel='text/javascript', src='/bower_components/jquery/dist/jquery.min.js')
+
+        // Bootstrap Core JavaScript
+        script(rel='text/javascript', src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+
+        // Angular JavaScript
+        script(rel='text/javascript', src='/bower_components/angular/angular.js')
+
+        // Plugin JavaScript
+
+        // Custom Theme JavaScript
+        script(rel='text/javascript', src='/javascripts/main.js')
+
+        // Google Analytics
+        // TODO: change UA-XXXXX-X to be my site's ID.
+        script.
+            (function (n, o, b, l, e, s) {
+                n.GoogleAnalyticsObject = l;
+                n[l] || (n[l] =
+                        function () {
+                            (n[l].q = n[l].q || []).push(arguments)
+                        });
+                n[l].l = +new Date;
+                e = o.createElement(b);
+                s = o.getElementsByTagName(b)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                s.parentNode.insertBefore(e, s)
+            }(window, document, 'script', 'ga'));
+            ga('create', '#{ga}', 'auto');ga('send', 'pageview');

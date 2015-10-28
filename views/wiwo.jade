@@ -1,0 +1,42 @@
+//
+   Created by Jan on 9/14/2015.
+
+extends layout
+
+block page_headliner
+    .container
+        .row
+            .col-xs-12
+                h4.page-description= t('nav.headline-toolTip.wiwo')
+
+block content
+    section#wiwo(data-ng-controller='WiwoController')
+        .container
+            .row
+                .col-xs-12
+                    h1.mb32
+                        = t('wiwo.headline.line1')
+                        br
+                        = t('wiwo.headline.line2')
+                        br
+                        small= t('wiwo.headline.small')
+
+
+                    a.project-tile.col-xs-12.col-sm-6.col-md-3(data-ng-attr-href='{{project.href}}', target='_self', data-ng-repeat='project in projects')
+                        div(id='{{project.id}}')
+                            .project-headline.primary
+                                | {{project.type}}
+                                //span.label.label-info(data-ng-if='project.new')= t('wiwo.when.new')
+                            img(alt='{{project.name}}', data-ng-attr-src='{{project.logo}}')
+                            .project-details
+                                span.when {{project.since}}
+                                = t('wiwo.when.since')
+                                br
+                                span.what {{project.what}}
+                            span.primary(data-ng-if='project.href')= t('wiwo.info')
+                                | &nbsp;
+                                i.fa.fa-angle-double-right
+                            span(data-ng-if='!project.href')= t('wiwo.comingSoon')
+
+block js
+    script(src='/javascripts/controllers/wiwo-ctrl.js')

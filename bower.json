@@ -1,0 +1,20 @@
+{
+  "name": "shecodez",
+  "version": "1.0.0",
+  "homepage": "http://www.shecodez.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2",
+    "angular-animate": "~1.2",
+    "angular-bootstrap": "~0.11.2",
+    "bootstrap": "~3.3.5",
+    "angular-odometer-js": "~0.1.1",
+    "odometer": "~0.4.7"
+  }
+}

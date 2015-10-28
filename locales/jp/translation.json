@@ -1,0 +1,90 @@
+{
+  "app":{
+    "title": "NJN"
+  },
+
+  "nav":{
+    "about": "横顔",
+    "wiwo": "WIWO",
+    "portfolio":"作品集",
+    "resume":"履歴書",
+
+    "headline-toolTip":{
+      "about": "一朝一夕",
+      "wiwo": "進行中の作業",
+      "portfolio":"作品の選択2014年 - 現在",
+      "resume":"ニコール・ノボレスの履歴書"
+    },
+
+    "lang": {
+      "en": "英語",
+      "es": "スペイン語",
+      "jp": "日本語",
+      "kr": "韓国語"
+    }
+  },
+
+  "footer": {
+    "contact" : "お問い合わせ",
+    "acknowledgement":"ホームページに触発された"
+  },
+
+  "home": {
+    "greeting": "こんにちは世界！",
+    "aboutLine1": "私は、ソフトウェア設計者と開発者",
+    "aboutLine2": "Georgia から来ました。",
+    "followBtn": {
+      "GitHub": "GitHub をフォローしてください"
+    }
+  },
+
+  "wiwo": {
+    "headline":{
+      "line1":"ピザ && マウンテンデュー",
+      "line2":".Equals(チャンピオンの滋養);",
+      "small":"プログラマー(名詞) - 生体はソフトウェアにジャンクフードを回すことができます。"
+    },
+    "type": {
+      "app":{
+        "web": "Webアプリ",
+        "android": "Androidアプリ"
+      },
+      "organization": "会社",
+      "engine": "エンジン"
+    },
+    "when": {
+      "new":"新しい",
+      "since": "年 - 現在"
+    },
+    "what":{
+      "app":{
+        "web": "BCMAシミュレーショントレーニングソフトウェア",
+        "android": "ソーシャルメディア"
+      },
+      "organization": "ソフトウェア・テク開発会社のウェブサイト",
+      "engine": "3Dゲームエンジン"
+    },
+    "info": "もっと詳しく知る",
+    "comingSoon":"近日公開"
+  },
+  "portfolio":{
+    "headline":{
+      "title":"2年私はソフトウェアにジャンクフードを回すことができました。",
+      "projects":"+ 作品そして増やし。",
+      "results":"結果。",
+      "noResults":"何も見つかりませんでした。"
+    },
+    "for": "ために",
+    "year":"年",
+    "links":{
+      "concept":"コンセプト",
+      "download":"ダウンロード",
+      "repository":"リポジトリ"
+    }
+  },
+  "resume":{},
+
+  "error":{
+    "pageNotFound": "ページが見つかりません"
+  }
+}
