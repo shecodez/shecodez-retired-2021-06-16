@@ -20,7 +20,7 @@ module.controller('WiwoController', function($scope) {
             logo:  'images/wiwo/logos/cloudlink-it.png',
             since: 2015,
             what:  'IT solutions company',
-            href:  'http://www.cloudlink-it.com/'
+            href:  'http://cloudlinkit-micronovations.rhcloud.com/'
         },
         // http://www.triworld.online/axion
         {
