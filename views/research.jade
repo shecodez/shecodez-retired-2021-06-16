@@ -1,0 +1,161 @@
+//
+   Created by Jan on 1/28/2016.
+
+extends layout
+
+block page_headliner
+    .container
+        .row
+            .col-xs-12
+                h4.page-description= t('research.headline')
+block content
+    section#research(data-ng-controller='ResearchController')
+        .container
+            .row
+                .hidden-xs.col-md-3.mt20
+                    v-accordion#r-accordion.vAccordion--default(control='accordion')
+                        v-pane(id='{{pane.id}}', ng-repeat='pane in panes')
+                            v-pane-header
+                                //| {{pane.header}}
+                                a(href='{{pane.id}}') {{pane.header}}
+                            v-pane-content
+                                //| {{pane.content}}
+                                div(ng-repeat= 'content in pane.contents')
+                                    a(href='{{content.link}}') {{content.name}}
+
+                .col-xs-12.col-md-9.research-info
+                    //  -----------------------------------------------------------------------
+                        Profile
+                        -----------------------------------------------------------------------
+                    section#Profile
+                        .row
+                            .col-xs-12
+                                h2 My Profile
+
+                        .row
+                            .col-xs-12
+                                p
+                                    strong ニコール·ノボレスの2017年文部科学省研究奨学金の情報ホームページ
+                                    br
+                                    | お忙しい中、当ホームページをご覧いただき、ありがとうございます。
+                                    br
+                                    | もしご質問等がございましたら、是非ご連絡ください。<
+                                    a(href='mailto:me@shecodez.com')  me@shecodez.com
+                                    |  >
+                            .col-xs-12.col-md-3
+                                img.img-responsive(src='../images/logo.png')
+                            .col-xs-12.col-md-8
+                                p
+                                    strong 自己紹介
+                                    br
+                                    | 名前: ニコール·ノボレス (Nicole Nobles)
+                                    br
+                                    | 生年月日: 1990年 7月 5日
+                                    br
+                                    | 専門分野: コンピュータサイエンス
+                                    br
+                                    | 趣味: (アメリカでは) ビデオゲーム、趣味のロボット & (日本で) 墨絵、弓道、スノーボード
+                            .col-xs-12
+                                p.text-justify
+                                    strong ロボット工学者を学びたい理由:
+                                    |  My goal is to one day put to use the software and hardware knowledge I have acquired over the years
+                                    | to build and program a robust and efficient humanoid robot with advanced Artificial Intelligence using
+                                    | the latest advances in artificial neural networks. I admire Japan's funding and research that promotes
+                                    | the pursuit of knowledge, internationalization, and culture. Japan's university robotics labs are bar none
+                                    | and historically serious about robotics, especially humanoid ones, and so I know I will be learning from
+                                    | the absolute best in the field.
+
+                    //  -----------------------------------------------------------------------
+                        Current Research
+                        -----------------------------------------------------------------------
+                    section#CurrentResearch
+                        .row
+                            .col-xs-12
+                                h2 Current Research
+
+                        .row
+                            .col-xs-12
+                                h4#Title Title
+                                p
+                                    strong The Economy of Cursorial Motion
+                                    | How the placement of leg joints in a bipedal humanoid affect the mechanical cost of generating force
+                                br
+
+                                h4#Abstract Abstract
+                                p.text-justify
+                                    | Over the past couple of decades, a number of humanoid robots have been designed, and realized: Boston Dynamics'
+                                    | Petman, and Atlas Unplugged, Honda's Asimo, the RobotCub Consortium's iCub and Aldebaran Robotics' Nao just to
+                                    | name a few. However, all these robots follow the same biomimetics inspired humanoid bipedal plantigrade leg model
+                                    | design. This research aims to design and realize a 3D printed humanoid bipedal digitigrade robot with an open source
+                                    | machine learning-based controller. With machine learning, we have the potential to develop autonomous, adaptive, and
+                                    | robust intelligent machines. With the commercialization of 3D printers and the wide adoption of open source software as
+                                    | a development platform, we make it available to all robotics hobbyist of many different backgrounds, countries, and skill levels.
+                                    | It is from the array of different backgrounds that we get a plethora of unique robot designs, straight from the imagination,
+                                    | that keeps robotics relevant, interesting and ever-evolving.
+                                br
+
+                                h4#Design Design Overview
+                                p Images coming soon...
+                    //  -----------------------------------------------------------------------
+                        Field of Study
+                        -----------------------------------------------------------------------
+                    section#FieldOfStudy
+                        .row
+                            .col-xs-12
+                                h2 Field of Study
+
+                        .row
+                            .col-xs-12
+                                p.text-justify
+                                    | Digitigrade and unguligrade postures improve locomotor economy by increasing stride length.
+                                    | (Myers, P., R. Espinosa, C. S. Parr, T. Jones, G. S. Hammond, and T. A. Dewey, 2016)
+                                    | If this applies to nature it should also have application in robot design.
+                                    strong My hypothesis is that a bipedal humanoid robot with digitigrade legs will have increased stable step length over
+                                        | currently available bipedal humanoid robots with plantigrade foot posture.
+                                    | If this hypothesis is true, it would give this robot increased efficiency of motion making the mechanical cost of generating
+                                    | force more economical than existing robots of similar size and weight. This approach to the leg design of a humanoid bipedal
+                                    | robot is quite unconventional thus there is little research on the topic.
+
+                                p 現在の専攻分野 (英語):
+                                    a(href='downloads/mext/field_of_study.pdf')  www.shecodez.com/field_of_study.pdf
+                                    |  [PDF ファイルサイズ : 186KB]
+                    //  -----------------------------------------------------------------------
+                        Research Program Plan
+                        -----------------------------------------------------------------------
+                    section#ResearchProgramPlan
+                        .row
+                            .col-xs-12
+                                h2#ResearchProgramPlan Research Program Plan
+
+                        .row
+                            .col-xs-12
+                                h4#ResearchPlan Research Program: Plan
+                                p.text-justify
+                                    | In development... Coming soon.
+
+                                //p 詳細な研究企画 (英語):
+                                    a(href='')  www.shecodez.com/research_plan.pdf
+                                    |  [PDF ファイルサイズ : XXXKB]
+
+                                h4#ResearchTimePlan Research Program: TimePlan
+                                p 研究計画 [二年のコース] (英語):
+                                    a(href='downloads/mext/research_timeplan.pdf')  www.shecodez.com/research_timeplan.pdf
+                                    |  [PDF ファイルサイズ : 219KB]
+
+
+
+block css
+    link(rel='stylesheet', href='/bower_components/v-accordion/dist/v-accordion.min.css')
+
+block js_bottom
+    script.
+        window.onload = function () {
+            var element = document.getElementById('CurrentResearch');
+            element.scrollIntoView(true);
+        }
+
+    // Research Controller
+    script(src='/javascripts/controllers/research-ctrl.js')
+    // Angular
+    script(rel='text/javascript', src='/bower_components/angular-animate/angular-animate.min.js')
+    script(rel='text/javascript', src='/bower_components/v-accordion/dist/v-accordion.min.js')

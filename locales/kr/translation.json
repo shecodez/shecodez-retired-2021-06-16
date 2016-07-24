@@ -81,6 +81,10 @@
   },
   "resume": {},
 
+  "research":{
+    "headline": "연구"
+  },
+
   "error":{
     "pageNotFound": "페이지를 찾을 수 없습니다"
   }

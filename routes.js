@@ -28,4 +28,13 @@ router.get('/portfolio', function (req, res) {
     res.render('portfolio');
 });
 
+/**
+ * GET /research
+ * Render Research page
+ */
+
+router.get('/research', function (req, res) {
+    res.render('research');
+});
+
 module.exports = router;

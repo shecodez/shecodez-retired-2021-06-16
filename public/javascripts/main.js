@@ -67,4 +67,7 @@ $('document').ready(function(){
         $('#searchInputBtn i').addClass('fa-search');
     });
 
+    /*----- Research Page -----*/
+
+
 });

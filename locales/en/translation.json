@@ -81,6 +81,10 @@
   },
   "resume": {},
 
+  "research":{
+    "headline": "Research"
+  },
+
   "error":{
     "pageNotFound": "Page not found"
   }

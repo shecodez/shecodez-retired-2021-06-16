@@ -33,22 +33,22 @@ module.controller('WiwoController', function($scope) {
             href:  'https://github.com/shecodez/Axion'
         },
         {
-            id:    'medscan',
+            id:    'tapp',
             type:  'Web App',
-            name:  'MedSCAN',
-            logo:  'images/wiwo/logos/medscan.png',
-            since: 2014,
-            what:  'Simulation Software'
+            name:  'Tapp',
+            logo:  'images/wiwo/logos/tapp.png',
+            since: 2016,
+            what:  'NFC Web App'
             //href:  'http://www.nobilitek.com/medscan'
         },
         {
-            id:    'smapp',
-            type:  'Android App',
-            name:  'SMApp',
-            logo:  'images/wiwo/logos/smapp.png',
-            since: 2014,
-            what:  'Social Meeting App'
-            //href:  'http://www.socialmeetingapp.com/'
+            id:    'research',
+            type:  'Research',
+            name:  'Research',
+            logo:  'images/logo.png',
+            since: 2016,
+            what:  'Robotics',
+            href:  '/research'
         }
     ];
 });

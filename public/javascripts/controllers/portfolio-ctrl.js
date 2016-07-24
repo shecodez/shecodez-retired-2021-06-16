@@ -14,6 +14,27 @@ module.controller('PortfolioController', function($scope, $filter) {
      * Portfolio
      */
     $scope.projects = [
+        // Websites
+        {
+            avocational: false,
+            name:        'micronovations.com',
+            language:    'Jade/CSS/JS',
+            concept:     'https://www.micronovations.com/',
+            type:        'Website',
+            for:         'microNovations LLC',
+            description: 'Cloud-based IT solutions company website',
+            year:        2016
+        },
+        {
+            avocational: false,
+            name:        'meduscan.com',
+            language:    'MEAN Stack (JS)',
+            concept:     'https://meduscan.mybluemix.net/',
+            type:        'Web App',
+            for:         'shecodez.com',
+            description: 'A BCMA training Web Application',
+            year:        2016
+        },
         // personal website (2015)
         {
             avocational: false,
@@ -25,6 +46,17 @@ module.controller('PortfolioController', function($scope, $filter) {
             description: 'Personal website, portfolio, and résumé',
             year:        2015
         },
+        // personal website (2014)
+        {
+            avocational: false,
+            name:        'lyfelink.com (2014)',
+            language:    'HTML/CSS',
+            concept:     'https://drive.google.com/file/d/0By5CpgoUYXl_akFDMUdZemFnWHc/view?usp=sharing',
+            type:        'Website',
+            for:         'Nicole J. Nobles',
+            description: 'Personal website, portfolio, and résumé',
+            year:        2014
+        },
         // Desktop Applications
         {
             avocational: false,
@@ -35,17 +67,6 @@ module.controller('PortfolioController', function($scope, $filter) {
             type:        'Desktop Application',
             for:         'GC&SU Nursing Dept.',
             description: 'BCMA simulation training software',
-            year:        2014
-        },
-        // personal website (2014)
-        {
-            avocational: false,
-            name:        'lyfelink.com (2014)',
-            language:    'HTML/CSS',
-            concept:     'https://drive.google.com/file/d/0By5CpgoUYXl_akFDMUdZemFnWHc/view?usp=sharing',
-            type:        'Website',
-            for:         'Nicole J. Nobles',
-            description: 'Personal website, portfolio, and résumé',
             year:        2014
         }
     ];

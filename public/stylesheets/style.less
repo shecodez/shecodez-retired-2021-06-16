@@ -66,6 +66,7 @@ html { }
 
 .mt16 { margin-top: 16px !important; }
 .mb16 { margin-bottom: 16px !important; }
+.mt20 { margin-top: 20px !important; }
 .mt32 { margin-top: 32px !important; }
 .mb32 { margin-bottom: 32px !important; }
 
@@ -327,6 +328,24 @@ hr {
   }
 }
 // Resume
+
+// Research
+#r-accordion {
+  v-pane-header a {
+    color: @text-color;
+    text-decoration: none;
+  }
+}
+.research-info {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 50vh;
+}
+
+.research-info section h2 .active {
+  color: @primary;
+}
 
 // ---------------------------------------------
 //                  #OBJECTS
