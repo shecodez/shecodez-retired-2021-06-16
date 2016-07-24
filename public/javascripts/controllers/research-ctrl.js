@@ -8,12 +8,12 @@
 var module = angular.module('appModule', ['vAccordion']);
 
 
-module.controller('ResearchController', ['$scope', function (scope) {
+module.controller('ResearchController', function ($scope) {
 
     /**
      * Research
      */
-    scope.panes = [
+    $scope.panes = [
         {
             id: '#Profile',
             header: 'Profile',
@@ -68,9 +68,9 @@ module.controller('ResearchController', ['$scope', function (scope) {
         }
     ];
 
-    scope.$on('r-accordion:onReady', function () {
-        var researchPane = scope.panes[1];
-        scope.accordion.expand(researchPane.id);
+    $scope.$on('r-accordion:onReady', function () {
+        var researchPane = $scope.panes[1];
+        $scope.accordion.expand(researchPane.id);
     });
-}]);
+});
 })(window.angular);
