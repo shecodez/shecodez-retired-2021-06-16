@@ -33,13 +33,13 @@ module.controller('WiwoController', function($scope) {
             href:  'https://github.com/shecodez/Axion'
         },
         {
-            id:    'tapp',
+            id:    'shetravelz',
             type:  'Web App',
-            name:  'Tapp',
-            logo:  'images/wiwo/logos/tapp.png',
+            name:  'S·HeTravelZ',
+            logo:  'images/wiwo/logos/shetravelz.png',
             since: 2016,
-            what:  'NFC Web App'
-            //href:  'http://www.nobilitek.com/medscan'
+            what:  'Web App',
+            href:  'https://shetravelz.herokuapp.com/'
         },
         {
             id:    'research',

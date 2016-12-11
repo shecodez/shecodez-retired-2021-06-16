@@ -16,6 +16,16 @@ module.controller('PortfolioController', function($scope, $filter) {
     $scope.projects = [
         // Websites
         {
+            avocational: true,
+            name:        'S·HeTravelZ',
+            language:    'HTML5/CSS3/JS',
+            concept:     'https://shetravelz.herokuapp.com/',
+            type:        'Website',
+            for:         'shecodez.com',
+            description: 'A MEAN travel website demo',
+            year:        2016
+        },
+        {
             avocational: false,
             name:        'micronovations.com',
             language:    'Jade/CSS/JS',
@@ -29,7 +39,7 @@ module.controller('PortfolioController', function($scope, $filter) {
             avocational: false,
             name:        'meduscan.com',
             language:    'MEAN Stack (JS)',
-            concept:     'https://meduscan.mybluemix.net/',
+            concept:     'https://github.com/shecodez/MeduSCAN',
             type:        'Web App',
             for:         'shecodez.com',
             description: 'A BCMA training Web Application',
