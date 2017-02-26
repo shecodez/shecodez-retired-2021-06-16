@@ -33,13 +33,13 @@ module.controller('WiwoController', function($scope) {
             href:  'https://github.com/shecodez/Axion'
         },
         {
-            id:    'shetravelz',
-            type:  'Web App',
-            name:  'S·HeTravelZ',
+            id:    'sheblogz',
+            type:  'Ruby on Rails',
+            name:  'SheBlogz',
             logo:  'images/wiwo/logos/shetravelz.png',
-            since: 2016,
+            since: 2017,
             what:  'Web App',
-            href:  'https://shetravelz.herokuapp.com/'
+            href:  'https://sheblogz.herokuapp.com/'
         },
         {
             id:    'research',

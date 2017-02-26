@@ -18,11 +18,21 @@ module.controller('PortfolioController', function($scope, $filter) {
         {
             avocational: true,
             name:        'S·HeTravelZ',
-            language:    'HTML5/CSS3/JS',
+            language:    'Ruby on Rails',
             concept:     'https://shetravelz.herokuapp.com/',
             type:        'Website',
             for:         'shecodez.com',
-            description: 'A MEAN travel website demo',
+            description: 'A Rails applicants management demo',
+            year:        2017
+        },
+        {
+            avocational: true,
+            name:        'S·HeTravelZ',
+            language:    'HTML5/CSS3/JS',
+            concept:     'http://codepen.io/shecodez/full/MbOdRz/',
+            type:        'Website',
+            for:         'shecodez.com',
+            description: 'A MEAN travel homepage demo',
             year:        2016
         },
         {
