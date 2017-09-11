@@ -29,6 +29,15 @@ router.get('/portfolio', function (req, res) {
 });
 
 /**
+ * GET /gallery
+ * Render Gallery page
+ */
+
+/*router.get('/gallery', function (req, res) {
+    res.render('gallery');
+});*/
+
+/**
  * GET /research
  * Render Research page
  */

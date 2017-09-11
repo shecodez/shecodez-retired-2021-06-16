@@ -265,6 +265,18 @@ hr {
 #portfolio{
   padding: 64px 0;
 
+  .neon-green { color: #32cd32 ; border-color: #32cd32; }
+  .neon-purple { color: #6e0dd0; }
+  .neon-pink { color: #ff0099; }
+  .neon-yellow { color: #ccff00; }
+  .neon-orange { color: #ff6600; }
+
+  .text-center { text-align: center; }
+  .boxy-border {
+    padding: 2px 5px;
+    border: 2px solid @primary;
+  }
+
   .input-group{
     border: 2px solid @primary;
 
@@ -306,6 +318,27 @@ hr {
       font-weight: 600;
     }
 
+    h3 a {
+      margin: 0 !important;
+      color: inherit;
+      text-decoration: none;
+      transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+
+      &.active {
+        color: @primary;
+      }
+
+      &:hover,
+      &:focus {
+        color: @link-color--hover;
+        text-decoration: none;
+      }
+
+      &:focus {
+        color: @link-color;
+      }
+    }
+
     a {
       margin-left: 8px;
     }
@@ -314,7 +347,7 @@ hr {
       margin-right: 1px;
       position: relative;
       top: -2px;
-      color: #777!important;
+      color: #777;
       border: 1px solid #777;
       border-radius: 0;
       font-weight: 100!important;

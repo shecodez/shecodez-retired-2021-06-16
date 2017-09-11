@@ -1,0 +1,19 @@
+//
+   Created by Nicole J. Nobles on 9/8/2017.
+
+extends layout
+block page_headliner
+    .container
+        .row
+            .col-xs-12
+                h4.page-description= t('nav.headline-toolTip.gallery')
+
+block content
+    section#gallery(data-ng-controller='GalleryController')
+        .container
+            .row
+                .col-md-12
+
+block js_bottom
+    // Gallery Controller
+    script(src='/javascripts/controllers/gallery-ctrl.js')

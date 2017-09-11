@@ -11,6 +11,7 @@
       "about": "Nicole J. Nobles 의 자기소개서",
       "wiwo": "진행중인 작업",
       "portfolio": "직장경력 2014년 ~ 현재",
+      "gallery": "내 작품에서보세요",
       "resume": "Nicole J. Nobles 의 이력서"
     },
     "lang": {
@@ -64,9 +65,10 @@
     "info": "자세히 알아보기",
     "comingSoon":"곧"
   },
+
   "portfolio": {
     "headline":{
-      "title":"2 years of turning junk food into code.",
+      "title":"3 years of turning junk food into code.",
       "projects":"+ 프로젝트와 계산.",
       "results":"결과.",
       "noResults":"검색 결과가 없습니다."
@@ -77,7 +79,8 @@
       "concept":"개념이미지",
       "download":"다운로드",
       "repository":"저장소 살펴보기"
-    }
+    },
+    "gallery":"갱도"
   },
   "resume": {},
 

@@ -17,23 +17,25 @@ module.controller('PortfolioController', function($scope, $filter) {
         // Websites
         {
             avocational: true,
-            name:        'S·HeTravelZ',
+            name:        'AtrackZ',
             language:    'Ruby on Rails',
-            concept:     'https://shetravelz.herokuapp.com/',
-            type:        'Website',
+            concept:     'https://shewatchez.herokuapp.com/',
+            type:        'Web App',
             for:         'shecodez.com',
-            description: 'A Rails applicants management demo',
-            year:        2017
+            description: 'An Amazon price tracker RoR App',
+            year:        2017,
+            color:       '#ff0099'
         },
         {
             avocational: true,
             name:        'S·HeTravelZ',
-            language:    'HTML5/CSS3/JS',
-            concept:     'http://codepen.io/shecodez/full/MbOdRz/',
-            type:        'Website',
+            language:    'Ruby on Rails',
+            concept:     'https://shetravelz.herokuapp.com/',
+            type:        'Web App',
             for:         'shecodez.com',
-            description: 'A MEAN travel homepage demo',
-            year:        2016
+            description: 'A Rails applicants CMS demo',
+            year:        2017,
+            color:       '#ff0099'
         },
         {
             avocational: false,
@@ -43,7 +45,8 @@ module.controller('PortfolioController', function($scope, $filter) {
             type:        'Website',
             for:         'microNovations LLC',
             description: 'Cloud-based IT solutions company website',
-            year:        2016
+            year:        2016,
+            color:       '#32cd32'
         },
         {
             avocational: false,
@@ -53,7 +56,8 @@ module.controller('PortfolioController', function($scope, $filter) {
             type:        'Web App',
             for:         'shecodez.com',
             description: 'A BCMA training Web Application',
-            year:        2016
+            year:        2016,
+            color:       '#ff0099'
         },
         // personal website (2015)
         {
@@ -64,7 +68,8 @@ module.controller('PortfolioController', function($scope, $filter) {
             type:        'Website',
             for:         'Nicole J. Nobles',
             description: 'Personal website, portfolio, and résumé',
-            year:        2015
+            year:        2015,
+            color:       '#32cd32'
         },
         // personal website (2014)
         {
@@ -75,7 +80,8 @@ module.controller('PortfolioController', function($scope, $filter) {
             type:        'Website',
             for:         'Nicole J. Nobles',
             description: 'Personal website, portfolio, and résumé',
-            year:        2014
+            year:        2014,
+            color:       '#32cd32'
         },
         // Desktop Applications
         {
@@ -87,7 +93,8 @@ module.controller('PortfolioController', function($scope, $filter) {
             type:        'Desktop Application',
             for:         'GC&SU Nursing Dept.',
             description: 'BCMA simulation training software',
-            year:        2014
+            year:        2014,
+            color:       '#ff6600'
         }
     ];
 

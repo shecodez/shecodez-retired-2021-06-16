@@ -24,19 +24,19 @@ module.controller('WiwoController', function($scope) {
         },
         // http://www.triworld.online/axion
         {
-            id:    'axion',
-            type:  'Engine',
-            name:  'Axion',
-            logo:  'images/wiwo/logos/axion.png',
-            since: 2015,
-            what:  '3D Game Engine',
-            href:  'https://github.com/shecodez/Axion'
+            id:    'bts',
+            type:  'Mobile App',
+            name:  'BTS',
+            logo:  'images/wiwo/logos/bts.png',
+            since: 2017,
+            what:  'Android App',
+            href:  'https://github.com/shecodez/bts'
         },
         {
             id:    'sheblogz',
             type:  'Ruby on Rails',
             name:  'SheBlogz',
-            logo:  'images/wiwo/logos/shetravelz.png',
+            logo:  'images/wiwo/logos/sheblogz.png',
             since: 2017,
             what:  'Web App',
             href:  'https://sheblogz.herokuapp.com/'
