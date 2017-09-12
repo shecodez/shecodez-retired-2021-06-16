@@ -81,7 +81,7 @@
                 title:  '',
                 desc:   '',
                 link:   '',
-                src:    'images/gallery/meduscan_i3.png'
+                src:    'images/gallery/meduscan_ii3.png'
             },
             {
                 id:     '',
@@ -116,7 +116,7 @@
                 title:  '',
                 desc:   '',
                 link:   '',
-                src:    'images/gallery/micronovations_i3.png'
+                src:    'images/gallery/micronovations_ii3.png'
             },
             {
                 id:     '',
@@ -158,7 +158,7 @@
                 title:  '',
                 desc:   '',
                 link:   '',
-                src:    'images/gallery/shetravelz_i1.png'
+                src:    'images/gallery/shetravelz_ii1.png'
             },
             {
                 id:     '',
