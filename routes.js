@@ -33,9 +33,9 @@ router.get('/portfolio', function (req, res) {
  * Render Gallery page
  */
 
-/*router.get('/gallery', function (req, res) {
+router.get('/gallery', function (req, res) {
     res.render('gallery');
-});*/
+});
 
 /**
  * GET /research

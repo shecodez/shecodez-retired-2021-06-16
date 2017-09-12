@@ -13,7 +13,15 @@ block content
         .container
             .row
                 .col-md-12
+                    .deckgrid(deckgrid='', source='images')
+                        .a-card
+                            a(ng-href='{{card.link}}', target='_blank')
+                                img(src='', data-ng-src='{{card.src}}')
+                            //h2 {{card.title}}
+
 
 block js_bottom
     // Gallery Controller
     script(src='/javascripts/controllers/gallery-ctrl.js')
+    // DeckGrid
+    script(src='bower_components/angular-deckgrid/angular-deckgrid.js')

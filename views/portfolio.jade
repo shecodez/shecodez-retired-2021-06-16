@@ -32,10 +32,10 @@ block content
                     span.text-muted {{filtered.length}} &nbsp;
                         = t('portfolio.headline.results')
 
-                    //br
-                    //h3.text-center
+                    br
+                    h3.text-center
                         a.boxy-border(href='/gallery', title=t('nav.headline-toolTip.gallery'))= t('portfolio.gallery')
-                    //br
+                    br
 
                     .year(data-ng-repeat='year in years', ng-show='filtered.length > 0')
                         h2.page-header {{year}}
