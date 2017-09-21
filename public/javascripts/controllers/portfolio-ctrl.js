@@ -19,7 +19,7 @@ module.controller('PortfolioController', function($scope, $filter) {
             avocational: true,
             name:        'AtrackZ',
             language:    'Ruby on Rails',
-            concept:     'https://shewatchez.herokuapp.com/',
+            concept:     'https://atrackz.herokuapp.com/',
             type:        'Web App',
             for:         'shecodez.com',
             description: 'An Amazon price tracker RoR App',
