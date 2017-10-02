@@ -136,10 +136,10 @@ app.use(function (err, req, res, next) {
     });
 });
 
-var ip 		= process.env.OPENSHIFT_NODEJS_IP 	|| '127.0.0.1';
-var port 	= process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var host 	= process.env.HOST 	|| '127.0.0.1';
+var port 	= process.env.PORT || 3000;
 
-app.listen(port, ip);
+app.listen(port, host);
 
 module.exports = app;
 
