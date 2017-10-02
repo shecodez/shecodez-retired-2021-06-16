@@ -1,3 +1,3 @@
 # SheCodeZ
 
-A personal website, online portfolio and Résumé
+My personal website, online portfolio, and Résumé
