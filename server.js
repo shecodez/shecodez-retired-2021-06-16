@@ -136,7 +136,7 @@ app.use(function (err, req, res, next) {
     });
 });
 
-var host 	= process.env.HOST 	|| '127.0.0.1';
+var host 	= process.env.HOST || '127.0.0.1';
 var port 	= process.env.PORT || 3000;
 
 app.listen(port, host);
