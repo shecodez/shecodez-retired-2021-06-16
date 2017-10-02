@@ -139,10 +139,10 @@ app.use(function (err, req, res, next) {
 var host = process.env.HOST || '127.0.0.1';
 var port = process.env.PORT || 3000;
 
-app.listen(port, host);
-/*app.listen(port, function () {
+//app.listen(port, host);
+app.listen(port, function () {
   console.log('Express server listening on %d, in %s mode', port, app.get('env'));
-});*/
+});
 
 module.exports = app;
 
