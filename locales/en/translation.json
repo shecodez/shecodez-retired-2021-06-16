@@ -5,6 +5,7 @@
     "nav": {
         "about": "About",
         "wiwo": "WIWO",
+        "blog": "Blog",
         "portfolio": "Portfolio",
         "resume": "Résumé",
         "headline-toolTip": {
@@ -12,7 +13,8 @@
             "wiwo": "What I'm Working On",
             "portfolio": "Selected Works of 2014 - present",
             "resume": "Résumé of Nicole J. Nobles",
-            "gallery": "A showcase what I've done"
+            "gallery": "A showcase what I've done",
+            "blog": "nav.headline-toolTip.blog"
         },
         "lang": {
             "en": "en",

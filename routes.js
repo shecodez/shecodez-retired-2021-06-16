@@ -15,9 +15,9 @@ router.get('/', function (req, res) {
  * Render WIWO page
  */
 
-router.get('/wiwo', function (req, res) {
+/* router.get('/wiwo', function (req, res) {
     res.render('wiwo');
-});
+}); */
 
 /**
  * GET /portfolio
