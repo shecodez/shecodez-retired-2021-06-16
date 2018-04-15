@@ -15,17 +15,17 @@ module.controller('PortfolioController', function($scope, $filter) {
      */
     $scope.projects = [
         // Websites
-        /*{
+        {
             avocational: false,
             name:        'HoloSpace',
             language:    'MERN',
             concept:     'https://holospace.herokuapp.com/',
             type:        'Web App',
             for:         'shecodez.com',
-            description: 'A VR 3D voice/text/visual chat Web Application',
+            description: 'A VR 3D voice/text/visual chat Web App',
             year:        2018,
             color:       '#ff0099'
-        },*/
+        },
         {
             avocational: false,
             name:        'SheBlogz',
