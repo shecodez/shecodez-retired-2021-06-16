@@ -10,7 +10,7 @@
 	var colors = {};
 	colors.WEB_APP = "#ff0099";
 	colors.GAME_DEV = "#ffa400";
-	colors.MOBILE = "00ffb1";
+	colors.MOBILE = "#00ffb1";
 	colors.DESKTOP = "#ff6600";
 	colors.WEBSITE = "#32cd32";
 
@@ -27,7 +27,7 @@
 				language: "ReactJS/Bootstrap/JS",
 				concept: "https://codepen.io/shecodez/full/pZgebb/",
 				type: "Web App",
-				for: "shecodez",
+				for: "shecodez.com",
 				description: "A reactjs spa for a car parts export company",
 				year: 2018,
 				color: colors.WEB_APP
