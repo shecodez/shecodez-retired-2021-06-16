@@ -23,6 +23,17 @@
 			// Websites
 			{
 				avocational: true,
+				name: "DNAgons",
+				language: "ReactJS/Bootstrap/JS",
+				concept: "https://codepen.io/shecodez/full/PBaavd/",
+				type: "Web App",
+				for: "shecodez.com",
+				description: "A reactjs preview for game (DNAgons) website",
+				year: 2018,
+				color: colors.WEBSITE
+			},
+			{
+				avocational: true,
 				name: "kuruma.io",
 				language: "ReactJS/Bootstrap/JS",
 				concept: "https://codepen.io/shecodez/full/pZgebb/",
