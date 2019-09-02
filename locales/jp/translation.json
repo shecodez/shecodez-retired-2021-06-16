@@ -1,21 +1,21 @@
 {
-  "app":{
+  "app": {
     "title": "NJN"
   },
 
-  "nav":{
+  "nav": {
     "about": "横顔",
     "wiwo": "WIWO",
     "blog": "ブログ",
-    "portfolio":"作品集",
-    "resume":"履歴書",
+    "portfolio": "作品集",
+    "resume": "履歴書",
 
-    "headline-toolTip":{
+    "headline-toolTip": {
       "about": "一朝一夕",
       "wiwo": "進行中の作業",
-      "portfolio":"作品の選択2014年 - 現在",
-      "gallery":"じゃ、私が何をしたか見てみま",
-      "resume":"ニコール・ノボレスの履歴書"
+      "portfolio": "作品の選択2014年 - 現在",
+      "gallery": "じゃ、私が何をしたか見てみま",
+      "resume": "ニコール・ノボレスの履歴書"
     },
 
     "lang": {
@@ -27,8 +27,8 @@
   },
 
   "footer": {
-    "contact" : "お問い合わせ",
-    "acknowledgement":"ホームページに触発された"
+    "contact": "お問い合わせ",
+    "acknowledgement": "ホームページに触発された"
   },
 
   "home": {
@@ -41,13 +41,13 @@
   },
 
   "wiwo": {
-    "headline":{
-      "line1":"ピザ && マウンテンデュー",
-      "line2":".Equals(チャンピオンの滋養);",
-      "small":"プログラマー(名詞) - 生体はソフトウェアにジャンクフードを回すことができます。"
+    "headline": {
+      "line1": "ピザ && マウンテンデュー",
+      "line2": ".Equals(チャンピオンの滋養);",
+      "small": "プログラマー(名詞) - 生体はソフトウェアにジャンクフードを回すことができます。"
     },
     "type": {
-      "app":{
+      "app": {
         "web": "Webアプリ",
         "android": "Androidアプリ"
       },
@@ -55,11 +55,11 @@
       "engine": "エンジン"
     },
     "when": {
-      "new":"新しい",
+      "new": "新しい",
       "since": "年 - 現在"
     },
-    "what":{
-      "app":{
+    "what": {
+      "app": {
         "web": "BCMAシミュレーショントレーニングソフトウェア",
         "android": "ソーシャルメディア"
       },
@@ -67,31 +67,31 @@
       "engine": "3Dゲームエンジン"
     },
     "info": "もっと詳しく知る",
-    "comingSoon":"近日公開"
+    "comingSoon": "近日公開"
   },
-  "portfolio":{
-    "headline":{
-      "title":"3年私はソフトウェアにジャンクフードを回すことができました。",
-      "projects":"+ 作品そして増やし。",
-      "results":"結果。",
-      "noResults":"何も見つかりませんでした。"
+  "portfolio": {
+    "headline": {
+      "title": "5年私はソフトウェアにジャンクフードを回すことができました。",
+      "projects": "+ 作品そして増やし。",
+      "results": "結果。",
+      "noResults": "何も見つかりませんでした。"
     },
     "for": "ために",
-    "year":"年",
-    "links":{
-      "concept":"コンセプト",
-      "download":"ダウンロード",
-      "repository":"リポジトリ"
+    "year": "年",
+    "links": {
+      "concept": "コンセプト",
+      "download": "ダウンロード",
+      "repository": "リポジトリ"
     },
-    "gallery":"ギャラリー"
+    "gallery": "ギャラリー"
   },
-  "resume":{},
+  "resume": {},
 
-  "research":{
+  "research": {
     "headline": "調査"
   },
 
-  "error":{
+  "error": {
     "pageNotFound": "ページが見つかりません"
   }
 }

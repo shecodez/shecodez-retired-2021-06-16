@@ -1,90 +1,90 @@
 {
-    "app": {
-        "title": "NJN"
+  "app": {
+    "title": "NJN"
+  },
+  "nav": {
+    "about": "About",
+    "wiwo": "WIWO",
+    "blog": "Blog",
+    "portfolio": "Portfolio",
+    "resume": "Résumé",
+    "headline-toolTip": {
+      "about": "A snapshot of Nicole J. Nobles",
+      "wiwo": "What I'm Working On",
+      "portfolio": "Selected Works of 2014 - present",
+      "resume": "Résumé of Nicole J. Nobles",
+      "gallery": "A showcase what I've done",
+      "blog": "nav.headline-toolTip.blog"
     },
-    "nav": {
-        "about": "About",
-        "wiwo": "WIWO",
-        "blog": "Blog",
-        "portfolio": "Portfolio",
-        "resume": "Résumé",
-        "headline-toolTip": {
-            "about": "A snapshot of Nicole J. Nobles",
-            "wiwo": "What I'm Working On",
-            "portfolio": "Selected Works of 2014 - present",
-            "resume": "Résumé of Nicole J. Nobles",
-            "gallery": "A showcase what I've done",
-            "blog": "nav.headline-toolTip.blog"
-        },
-        "lang": {
-            "en": "en",
-            "es": "es",
-            "jp": "jp",
-            "kr": "kr"
-        }
-    },
-    "footer": {
-        "contact": "Contact",
-        "acknowledgement": "Design heavily inspired by"
-    },
-    "home": {
-        "greeting": "Hello, World!",
-        "aboutLine1": "I'm a software designer & developer",
-        "aboutLine2": "from Georgia.",
-        "followBtn": {
-            "GitHub": "Follow me on GitHub"
-        }
-    },
-    "wiwo": {
-        "headline": {
-            "line1": "Pizza && Mt.Dew",
-            "line2": ".Equals(fuel-of-champions);",
-            "small": "pro·gram·mer (n) - an organism that turns junk food into software."
-        },
-        "type": {
-            "app": {
-                "web": "Web App",
-                "android": "Android App"
-            },
-            "organization": "Organization",
-            "engine": "Engine"
-        },
-        "when": {
-            "new": "New",
-            "since": " - Present"
-        },
-        "what": {
-            "app": {
-                "web": "BCMA simulation training software",
-                "android": "A Social Meeting Application"
-            },
-            "organization": "Software/tech development company website",
-            "engine": "3D Game Engine"
-        },
-        "info": "Learn More",
-        "comingSoon": "Coming Soon"
-    },
-    "portfolio": {
-        "headline": {
-            "title": "3 years of turning junk food into code.",
-            "projects": "+ projects and counting.",
-            "results": "results.",
-            "noResults": "No results found."
-        },
-        "for": "for",
-        "year": "",
-        "links": {
-            "concept": "View Concept",
-            "download": "Download",
-            "repository": "View Repository"
-        },
-        "gallery": "View Showcase"
-    },
-    "resume": {},
-    "research": {
-        "headline": "Research"
-    },
-    "error": {
-        "pageNotFound": "Page not found"
+    "lang": {
+      "en": "en",
+      "es": "es",
+      "jp": "jp",
+      "kr": "kr"
     }
+  },
+  "footer": {
+    "contact": "Contact",
+    "acknowledgement": "Design heavily inspired by"
+  },
+  "home": {
+    "greeting": "Hello, World!",
+    "aboutLine1": "I'm a software designer & developer",
+    "aboutLine2": "from Georgia.",
+    "followBtn": {
+      "GitHub": "Follow me on GitHub"
+    }
+  },
+  "wiwo": {
+    "headline": {
+      "line1": "Pizza && Mt.Dew",
+      "line2": ".Equals(fuel-of-champions);",
+      "small": "pro·gram·mer (n) - an organism that turns junk food into software."
+    },
+    "type": {
+      "app": {
+        "web": "Web App",
+        "android": "Android App"
+      },
+      "organization": "Organization",
+      "engine": "Engine"
+    },
+    "when": {
+      "new": "New",
+      "since": " - Present"
+    },
+    "what": {
+      "app": {
+        "web": "BCMA simulation training software",
+        "android": "A Social Meeting Application"
+      },
+      "organization": "Software/tech development company website",
+      "engine": "3D Game Engine"
+    },
+    "info": "Learn More",
+    "comingSoon": "Coming Soon"
+  },
+  "portfolio": {
+    "headline": {
+      "title": "5 years of turning junk food into code.",
+      "projects": "+ projects and counting.",
+      "results": "results.",
+      "noResults": "No results found."
+    },
+    "for": "for",
+    "year": "",
+    "links": {
+      "concept": "View Concept",
+      "download": "Download",
+      "repository": "View Repository"
+    },
+    "gallery": "View Showcase"
+  },
+  "resume": {},
+  "research": {
+    "headline": "Research"
+  },
+  "error": {
+    "pageNotFound": "Page not found"
+  }
 }

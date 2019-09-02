@@ -38,58 +38,58 @@
   },
 
   "wiwo": {
-    "headline":{
-      "line1":"피자 &&마운틴 듀",
-      "line2":".Equals(챔피언의음식);",
-      "small":"프로그래머 (명) - an organism that turns junk food into software."
+    "headline": {
+      "line1": "피자 &&마운틴 듀",
+      "line2": ".Equals(챔피언의음식);",
+      "small": "프로그래머 (명) - an organism that turns junk food into software."
     },
     "type": {
-      "app":{
-        "web":"웹앱",
-        "android":"Android 앱"
+      "app": {
+        "web": "웹앱",
+        "android": "Android 앱"
       },
-      "organization":"비즈니스",
-      "engine":"게임 엔진"
+      "organization": "비즈니스",
+      "engine": "게임 엔진"
     },
     "when": {
-      "new":"새로운",
-      "since":" - 현재"
+      "new": "새로운",
+      "since": " - 현재"
     },
-    "what":{
-      "app":{
-        "web":"BCMA 시뮬레이션 소프트웨어",
+    "what": {
+      "app": {
+        "web": "BCMA 시뮬레이션 소프트웨어",
         "android": "소셜 미디어 응용 프로그램"
       },
-      "organization":"소프트웨어 / 기술 개발 회사 웹 사이트",
-      "engine":"3D 게임 엔진"
+      "organization": "소프트웨어 / 기술 개발 회사 웹 사이트",
+      "engine": "3D 게임 엔진"
     },
     "info": "자세히 알아보기",
-    "comingSoon":"곧"
+    "comingSoon": "곧"
   },
 
   "portfolio": {
-    "headline":{
-      "title":"3 years of turning junk food into code.",
-      "projects":"+ 프로젝트와 계산.",
-      "results":"결과.",
-      "noResults":"검색 결과가 없습니다."
+    "headline": {
+      "title": "5 years of turning junk food into code.",
+      "projects": "+ 프로젝트와 계산.",
+      "results": "결과.",
+      "noResults": "검색 결과가 없습니다."
     },
     "for": "for",
-    "year":"",
-    "links":{
-      "concept":"개념이미지",
-      "download":"다운로드",
-      "repository":"저장소 살펴보기"
+    "year": "",
+    "links": {
+      "concept": "개념이미지",
+      "download": "다운로드",
+      "repository": "저장소 살펴보기"
     },
-    "gallery":"갱도"
+    "gallery": "갱도"
   },
   "resume": {},
 
-  "research":{
+  "research": {
     "headline": "연구"
   },
 
-  "error":{
+  "error": {
     "pageNotFound": "페이지를 찾을 수 없습니다"
   }
 }
